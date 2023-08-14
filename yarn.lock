@@ -798,6 +798,11 @@
     mjml "^4.7.1"
     nodemailer "^6.4.13"
 
+"@vendure/migrate-v2@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@vendure/migrate-v2/-/migrate-v2-0.4.0.tgz#89fb1e5081a93aa58ede031301e6343d948c95ea"
+  integrity sha512-bcnGlUV0H2p0MCTt7LAc2EJVIQuN6ZW6LBk2vcvmz4BWbCWf6VBAibIvMFv8EO6oWakscOBtF8KcIa/kT4VrTA==
+
 abbrev@1, abbrev@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"

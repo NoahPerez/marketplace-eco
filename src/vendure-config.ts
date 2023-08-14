@@ -7,6 +7,7 @@ import {
 import { defaultEmailHandlers, EmailPlugin } from '@vendure/email-plugin';
 import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
+import { MigrationV2Plugin } from '@vendure/migrate-v2';
 import 'dotenv/config';
 import path from 'path';
 
@@ -62,6 +63,7 @@ export const config: VendureConfig = {
     // need to be updated. See the "Migrations" section in README.md.
     customFields: {},
     plugins: [
+        MigrationV2Plugin,
         AssetServerPlugin.init({
             route: 'assets',
             assetUploadDir: path.join(__dirname, '../static/assets'),
@@ -91,5 +93,6 @@ export const config: VendureConfig = {
             route: 'admin',
             port: 3002,
         }),
+       
     ],
 };
